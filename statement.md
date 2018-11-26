@@ -5,6 +5,7 @@
 #include <utility>
 #include <iterator>
 #include <stdexcept>
+#define VECTOR_MAX_SZ 10000000 
 namespace ja {
 	template <typename T>
 	class vector {
@@ -308,7 +309,7 @@ namespace ja {
 
 	template <typename T>
 	typename vector<T>::size_type vector<T>::max_size() const noexcept {
-		return LNI_VECTOR_MAX_SZ;
+		return VECTOR_MAX_SZ;
 	}
 
 	template <typename T>
